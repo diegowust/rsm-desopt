@@ -1,0 +1,25 @@
+[project]
+name = "rsm-desopt"
+version = "0.1.0"
+description = "RSM + Derringer-Suich desirability optimization and diagnostics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Diego Wüst Calvo"}]
+
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.11",
+  "statsmodels>=0.14",
+  "matplotlib>=3.8"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6", "mypy>=1.10"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
