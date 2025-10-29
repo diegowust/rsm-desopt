@@ -1,8 +1,7 @@
 """
 desirability_opt.py
 
-Implements Derringer Suich desirability functions and a multi-start optimizer
-that mirrors the method used in Minitab's Response Optimizer.
+Implements Derringer Suich desirability functions and a multi-start optimizer.
 """
 
 import numpy as np
